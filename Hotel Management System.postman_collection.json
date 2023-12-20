@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "0aa14b3c-1393-4abd-a899-f437e13d614d",
+		"name": "Hotel Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23119593"
+	},
+	"item": [
+		{
+			"name": "User-Service",
+			"item": [
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Rohit\",\r\n    \"email\":\"rohit@pnc.com\",\r\n    \"mobile\":57986412711\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/user/50b25d95-0d76-42a0-b3a2-573fbb827845",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user",
+								"50b25d95-0d76-42a0-b3a2-573fbb827845"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rating Service",
+			"item": [
+				{
+					"name": "Add Rating",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hotelId\":\"d1ec477f-8a58-480f-a60b-b69b8d0218b9\",\r\n    \"userId\":\"5b8dff2d-9d13-45d7-a9bb-a27dc09ec1c9\",\r\n    \"rating\":9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/rating",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"rating"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Ratings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/rating",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"rating"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Rating By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/rating/5086539d-72a4-48b6-ad22-6cc959fd0d85",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"rating",
+								"5086539d-72a4-48b6-ad22-6cc959fd0d85"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotel Service",
+			"item": [
+				{
+					"name": "Add Hotel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Cafe chocolade\",\r\n    \"location\":\"Akola\",\r\n    \"about\":\"We serve only Cold drinks\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/hotel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"hotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Hotel by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Cafe chocolade\",\r\n    \"location\":\"Akola\",\r\n    \"about\":\"We serve only Cold drinks\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/hotel/a9557686-ca3f-4694-9604-fb4b05e91c3b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"hotel",
+								"a9557686-ca3f-4694-9604-fb4b05e91c3b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Hotels",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Cafe chocolade\",\r\n    \"location\":\"Akola\",\r\n    \"about\":\"We serve only Cold drinks\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/hotel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"hotel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Api Gateway",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
