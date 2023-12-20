@@ -8,5 +8,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Md-Umair-Akola/Hotel-Management-System
+          uri: https://github.com/Md-Umair-Akola/Hotel-Management-System-Config-file
           clone-on-start: true
+
